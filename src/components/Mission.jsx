@@ -1,4 +1,4 @@
-const Mission = () => {
+export const Mission = () => {
   return (
     <section>
       <h2>Our mission</h2>
@@ -18,5 +18,3 @@ const Mission = () => {
     </section>
   );
 };
-
-export default Mission;

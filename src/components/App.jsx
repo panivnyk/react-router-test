@@ -1,16 +1,12 @@
-import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { About } from '../pages/About';
+import { Home } from '../pages/Home';
+import { ProductDetails } from '../pages/ProductDetails';
+import { Products } from '../pages/Products';
+import { Mission } from './Mission';
+import { Team } from './Team';
+import { Reviews } from './Reviews';
 import { SharedLayout } from './SharedLayout';
-
-const createAsyncComponent = path => lazy(() => import(path));
-
-const About = createAsyncComponent('../pages/About');
-const Home = createAsyncComponent('../pages/Home');
-const ProductDetails = createAsyncComponent('../pages/ProductDetails');
-const Products = createAsyncComponent('../pages/Products');
-const Mission = createAsyncComponent('./Mission');
-const Team = createAsyncComponent('./Team');
-const Reviews = createAsyncComponent('./Reviews');
 
 export const App = () => {
   return (
